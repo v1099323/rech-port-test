@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230613172613">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230613175731">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +21,8 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#" data-goto=".about" data-goto-header class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#" data-goto=".river-sand" data-goto-header class="menu__link">Услуги</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
@@ -65,7 +65,7 @@
 									Осуществляется доставка песка автомашинами ЗИЛ и КАМАЗ в черте города.</p>
 							</div>
 						</div>
-						<div class="about__image"><img src="img/about/01.jpg" alt="about-company-image"></div>
+						<div class="about__image"><picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.jpg" alt="about-company-image"></picture></div>
 					</div>
 				</div>
 			</section>
@@ -140,9 +140,13 @@
 					</div>
 				</div>
 			</section>
+			<div class="page__map map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.5387182045868!2d69.14603411630185!3d54.8586949286152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43b23a3add0dd32d%3A0x391e02fe3cb2107e!2z0YPQuy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCDQmtCw0LfQsNGF0YHRgtCw0L3QsCA1Mywg0J_QtdGC0YDQvtC_0LDQstC70L7QstGB0LogMTUwMDAw!5e0!3m2!1sru!2skz!4v1686653624435!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__copy">2023 © Все права защищены.</div>
 			</div>
 		</footer>
 	</div>
@@ -156,7 +160,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230613172613"></script>
+	<script src="js/app.min.js?_v=20230613175731"></script>
 </body>
 
 </html>
