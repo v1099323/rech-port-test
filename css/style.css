@@ -211,10 +211,8 @@ h6 {
   display: none;
 }
 
-.no-webp .main{
-  background: url(img/main/bg.jpg) center/cover no-repeat; }
-
 .main {
+  background: url(img/main/bg.jpg) center/cover no-repeat;
   min-height: 100dvh;
   position: relative;
 }
@@ -1153,5 +1151,3 @@ h6 {
     background-color: #ec6f1c;
   }
 }
-
-.webp .main{ background: url(img/main/bg.webp) center/cover no-repeat; }
