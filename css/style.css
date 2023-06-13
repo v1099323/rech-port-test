@@ -649,7 +649,7 @@ h6 {
   }
 
   .main__sub-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .main__sub-title:not(:last-child) {
@@ -844,6 +844,10 @@ h6 {
             transform: rotate(45deg);
   }
 
+  .main__title span {
+    display: block;
+  }
+
   .about__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -926,15 +930,15 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 1.75rem , 1.3409090909rem  +  2.0454545455vw , 2.875rem )) {
+@supports (font-size: clamp( 1.5rem , 1rem  +  2.5vw , 2.875rem )) {
     .main__sub-title {
-      font-size: clamp( 1.75rem , 1.3409090909rem  +  2.0454545455vw , 2.875rem );
+      font-size: clamp( 1.5rem , 1rem  +  2.5vw , 2.875rem );
     }
 }
 
-@supports not (font-size: clamp( 1.75rem , 1.3409090909rem  +  2.0454545455vw , 2.875rem )) {
+@supports not (font-size: clamp( 1.5rem , 1rem  +  2.5vw , 2.875rem )) {
     .main__sub-title {
-      font-size: calc(1.75rem + 1.125 * (100vw - 20rem) / 55);
+      font-size: calc(1.5rem + 1.375 * (100vw - 20rem) / 55);
     }
 }
 
