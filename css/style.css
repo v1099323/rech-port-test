@@ -440,6 +440,11 @@ h6 {
   gap: 1.25rem;
 }
 
+.item-contact__adress {
+  color: blue;
+  text-decoration: underline;
+}
+
 .item-contact__title {
   font-weight: 600;
 }
@@ -555,6 +560,11 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.875rem;
+}
+
+.advantages__arrow {
+  min-width: 3.4375rem;
+  height: 3.4375rem;
 }
 
 .advantages__item {
@@ -1240,6 +1250,11 @@ h6 {
 @media (max-width: 29.99875em) {
   .header__logo {
     display: none;
+  }
+
+  .advantages__arrow {
+    min-width: 1.875rem;
+    height: 1.875rem;
   }
 }
 
