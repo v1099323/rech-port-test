@@ -315,6 +315,10 @@ h6 {
   line-height: 1.3;
 }
 
+.main__sub-title:not(:last-child) {
+  margin-bottom: 3.125rem;
+}
+
 .main__button {
   font-weight: 700;
   color: #fff;
@@ -404,6 +408,40 @@ h6 {
      object-fit: cover;
 }
 
+.contacts__title {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.contacts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.875rem;
+}
+
+.item-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.item-contact__texts {
+  line-height: 1.3;
+}
+
+.item-contact__tel {
+  color: blue;
+}
+
 .river-sand {
   background-color: #f0f0f0;
 }
@@ -488,14 +526,6 @@ h6 {
   gap: 0.9375rem;
 }
 
-.advantages__item::before {
-  content: "";
-  display: inline-block;
-  background: url(../img/advantages/checkbox-circle-svgrepo-com.svg) 0 0/cover no-repeat;
-  min-width: 2.5rem;
-  height: 2.5rem;
-}
-
 .advantages__text {
   font-weight: 600;
   line-height: 1.35;
@@ -542,10 +572,6 @@ h6 {
     font-size: 2.875rem;
   }
 
-  .main__sub-title:not(:last-child) {
-    margin-bottom: 3.125rem;
-  }
-
   .about__content {
     padding-top: 3.125rem;
   }
@@ -559,6 +585,26 @@ h6 {
   }
 
   .about__text {
+    font-size: 1.5rem;
+  }
+
+  .contacts {
+    padding-top: 3.75rem;
+  }
+
+  .contacts {
+    padding-bottom: 3.75rem;
+  }
+
+  .contacts__title {
+    font-size: 2.875rem;
+  }
+
+  .contacts__title:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+
+  .item-contact__texts {
     font-size: 1.5rem;
   }
 
@@ -652,10 +698,6 @@ h6 {
     font-size: 1.5rem;
   }
 
-  .main__sub-title:not(:last-child) {
-    margin-bottom: 1.25rem;
-  }
-
   .about__content {
     padding-top: 1.875rem;
   }
@@ -670,6 +712,26 @@ h6 {
 
   .about__text {
     font-size: 1rem;
+  }
+
+  .contacts {
+    padding-top: 1.875rem;
+  }
+
+  .contacts {
+    padding-bottom: 1.875rem;
+  }
+
+  .contacts__title {
+    font-size: 2rem;
+  }
+
+  .contacts__title:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .item-contact__texts {
+    font-size: 1.125rem;
   }
 
   .river-sand {
@@ -942,18 +1004,6 @@ h6 {
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
-    .main__sub-title:not(:last-child) {
-      margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
-    .main__sub-title:not(:last-child) {
-      margin-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 55);
-    }
-}
-
 @supports (padding-top: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
     .about__content {
       padding-top: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem );
@@ -999,6 +1049,66 @@ h6 {
 @supports not (font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem )) {
     .about__text {
       font-size: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem )) {
+    .contacts {
+      padding-top: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem )) {
+    .contacts {
+      padding-top: calc(1.875rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem )) {
+    .contacts {
+      padding-bottom: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem )) {
+    .contacts {
+      padding-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (font-size: clamp( 2rem , 1.6818181818rem  +  1.5909090909vw , 2.875rem )) {
+    .contacts__title {
+      font-size: clamp( 2rem , 1.6818181818rem  +  1.5909090909vw , 2.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 2rem , 1.6818181818rem  +  1.5909090909vw , 2.875rem )) {
+    .contacts__title {
+      font-size: calc(2rem + 0.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
+    .contacts__title:not(:last-child) {
+      margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem )) {
+    .contacts__title:not(:last-child) {
+      margin-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem )) {
+    .item-contact__texts {
+      font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem )) {
+    .item-contact__texts {
+      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 55);
     }
 }
 
@@ -1222,6 +1332,18 @@ h6 {
 @media (any-hover: hover) {
   .button:hover {
     background-color: #ec6f1c;
+  }
+
+  .item-contact__adress:hover {
+    text-decoration: underline;
+  }
+
+  .item-contact__tel:hover {
+    text-decoration: underline;
+  }
+
+  .item-contact__mail:hover {
+    text-decoration: underline;
   }
 }
 
